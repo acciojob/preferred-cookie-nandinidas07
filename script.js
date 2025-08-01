@@ -1,4 +1,5 @@
 //your JS code here. If required.
+document.addEventListener("DOMContentLoaded",()=>{
 const form = document.getElementById('preferencesForm');
 const fontSizeSelect = document.getElementById('fontsize');
 const fontColorSelect = document.getElementById('fontcolor');
@@ -30,4 +31,5 @@ form.addEventListener('submit', (e) => {
 
   document.documentElement.style.setProperty('--fontsize', fontSize);
   document.documentElement.style.setProperty('--fontcolor', fontColor);
+});
 });
